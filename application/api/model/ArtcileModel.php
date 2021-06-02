@@ -4,7 +4,9 @@
 namespace app\api\model;
 
 
-class ArtcileModel
-{
+use think\Model;
 
+class ArtcileModel extends Model
+{
+    protected $table = 'artcile';
 }

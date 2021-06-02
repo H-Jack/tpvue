@@ -9,7 +9,7 @@ use Firebase\JWT\JWT;
 use think\Controller;
 use think\Request;
 
-class Login extends Base
+class Login extends Cross
 {
     public function login(Request $request)
     {

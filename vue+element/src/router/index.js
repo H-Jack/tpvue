@@ -1,7 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Login from "../views/Login";
-import Home from "../views/Home"
+import Home from "../views/Home";
+import Artcile from "../views/Artcile";
 
 Vue.use(VueRouter);
 
@@ -12,7 +13,14 @@ const routes = [
   },
   {
     path: "/",
-    component: Home
+    component: Home,
+    children: [
+      {
+        path: "/artcile",
+        component: Artcile,
+        name:Artcile
+      }
+    ]
   }
 ];
 
